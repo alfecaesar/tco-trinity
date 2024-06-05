@@ -3,12 +3,12 @@
 $white: #FFFFFF;
 $black: #000000;
 $lightblue: #B9EAFF;
-$orange: #ff9c00;
+$orange: #da5020;
 $darkgrey: #363535;
 $magenta: #ea344e;
 $blue: #10469C;
 $bluedark: #042558;
-$yellow: #FFB800;
+$yellow: #DAA520;
 
 
 .bg-yellow {
@@ -26,13 +26,14 @@ $yellow: #FFB800;
 .bg-orange {
     background-color: $orange;
 }
-
 .bg-darkgrey {
     background-color: $darkgrey;
 }
-
 .bg-magenta {
     background-color: $magenta;
+}
+.bg-black{
+    background-color: $black;
 }
 
 .text-color-yellow,

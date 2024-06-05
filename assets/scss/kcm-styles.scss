@@ -1,0 +1,12 @@
+footer{
+    .container-xxl{
+        .row{
+            &:first-of-type{
+                img{
+                    max-width: 300px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
