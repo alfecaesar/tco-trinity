@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js'></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+ var calendar = new FullCalendar.Calendar(calendarEl, {
+            timeZone: '############',
+            googleCalendarApiKey: 'AIzaSyDTK6c94YQd5989fduUeA91U4CRi27wrGk', // googleCalendarApiKey
+            headerToolbar: {
+                start: 'prev,next today',
+                center: 'title',
+                end: 'dayGridMonth,timeGridWeek,timeGridDay,listYear'
+            },
+           
+        
+         displayEventTime: false, // don't show the time column in list view
+
+    // THIS KEY WON'T WORK IN PRODUCTION!!!
+    // To make your own Google API key, follow the directions here:
+    // http://fullcalendar.io/docs/google_calendar/
+    googleCalendarApiKey: 'AIzaSyDTK6c94YQd5989fduUeA91U4CRi27wrGk',
+
+    // US Holidays
+    events: '',
+
+    eventClick: function(arg) {
+
+      // opens events in a popup window
+      window.open(arg.event.url, '_blank', 'width=700,height=600');
+
+      // prevents current tab from navigating
+      arg.jsEvent.preventDefault();
+    }
+
+  });
+
+  calendar.render();
+});
+
+
+
+    </script>
+<link rel='stylesheet' id='fullcalendar-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' type='text/css' media='all' />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Trinity Church</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/favicons/favicon.ico">
+
+    <!-- Custom styles for this template with bootstrap css -->
+    <!-- build:css -->
+        <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+    <!-- endbuild -->
+</head>
+<!-- Top Header -->
+<body>
+<header class="pt-0 pb-0 pb-lg-0 position-relative z-3 bg-blue">
+    
+    <div class="social-icons bg-white py-1">
+        <div class="container-xxl d-flex justify-content-lg-end justify-content-center mb-2 mb-lg-0 ">
+
+            <a href="tel:8557663835" class="text-decoration-none text-color-darkgrey me-3 hover-blue me-sm-4 roboto-medium me-sm-5">+1 855-766-3835</a>
+
+            <a href="#" class="text-decoration-none text-color-bluedark me-3 hover-yellow">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="#" class="text-decoration-none text-color-bluedark me-3 hover-yellow">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-decoration-none text-color-bluedark me-3 hover-yellow">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="text-decoration-none text-color-bluedark me-0 hover-yellow">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md pt-0 pb-0">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo-header.png" class="d-inline-block align-top img-fluid" alt="" loading="lazy" width="279" height="118">
+                <span class="d-none d-print-none">Trinity</span>
+            </a>
+            <button class="navbar-toggler navbar-dark bg-blue" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav mb-2 mb-md-0">
+                 
+                         <li class="nav-item roboto-regular ">
+                        <a class="nav-link text-color-white hover-yellow" aria-current="page" href="index.html">Home</a>
+                    </li>
+                      <li class="nav-item roboto-regular">
+                        <a class="nav-link text-color-white hover-yellow" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item roboto-regular ">
+                        <a class="nav-link text-color-white hover-yellow" href="ministries.html">Ministries</a>
+                    </li>
+                    <li class="nav-item active roboto-regular selected calendar">
+                        <a class="nav-link text-color-white hover-yellow" href="calendar.html">Calendar</a>
+                    </li>
+                    <li class="nav-item roboto-regular no-border">
+                        <a class="nav-link text-color-white hover-yellow" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item roboto-regular">
+                        <a class="nav-link text-color-bluedark hover-white bg-yellow py-1 px-sm-2 roboto-bold text-uppercase" href="#">Watch Live</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- End -->
+
+
+<!-- Banner -->
+<section class="wrap-banner-calendar">
+ <div> 
+  <h2 class="banner roboto-bold">CALENDAR</h2>
+  </div>
+</section>
+
+<!-- End -->
+
+    <!-- Body Content -->
+  <div class="container body-content-calendar">
+ 
+
+<div id='calendar'>
+
+</div>
+
+</div>
+
+<!-- End -->
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-bluedark py-3 mt-n1">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-12 text-center mb-1">
+                    <a href="#"><img src="assets/img/logo-footer.png" alt="Trinity"></a>
+                </div>
+
+ <div class="col-12 mb-2">
+                    <div class="social-icons">
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="text-decoration-none text-color-white mx-2 hover-yellow">
+                                <i class="fa-brands fa-square-x-twitter"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none text-color-white mx-2 hover-yellow">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none text-color-white mx-2 hover-yellow">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none text-color-white mx-2 hover-yellow">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 text-center mb-3 company-address">
+                    <p class="text-color-white roboto-medium mb-0"><a href="#" class="text-decoration-none text-color-white hover-yellow">1565 N 113th Ave Avondale, AZ 85392-3935</a> 
+
+ <p class="text-color-white roboto-medium mb-0">
+Saturday 4:00 & 5:30 PM | Sunday 8:30 & 11:30 AM</p>
+ <p class="text-color-white roboto-medium mb-0"> <a href="tel:1234567890" class="text-decoration-none text-color-white hover-yellow">(123) 456-7890 | (123) 456-7890</a> </p>
+                </div>
+                <div class="col-12 text-center mb-2">
+                    <nav class="collapse show footer-nav">
+                        <ul class="row d-flex row-gap-2">
+                            <li class="col-lg-2 col-6 roboto-medium"><a class="text-color-white text-decoration-none hover-yellow" href="index.html">Home</a></li>
+                            <li class="col-lg-2 col-6 roboto-medium"><a class="text-color-white text-decoration-none hover-yellow" href="about.html">About</a></li>
+                            <li class="col-lg-2 col-6 roboto-medium "><a class="text-color-white text-decoration-none hover-yellow" href="ministries.html">Ministries</a></li>
+                            <li class="col-lg-2 col-6 roboto-bold selected "><a class="text-color-white text-decoration-none hover-yellow" href="calendar.html">Calendar</a></li>
+                            <li class="col-lg-2 col-6 roboto-medium no-border"><a class="text-color-white text-decoration-none hover-yellow" href="contact.html">Contact Us</a></li>
+                            <li class="col-lg-2 col-6 roboto-medium "><a class="watchlive text-color-bluedark text-decoration-none hover-white bg-yellow py-1 px-sm-2 roboto-bold text-uppercase" href="#">Watch Live</a></li>
+                        </ul>  
+                    </nav>  
+                </div>
+               
+                <div class="col-12 text-center copyright-text footer-desktop">
+                    <p class="text-color-white roboto-regular mb-0 pt-3 pb-2">© Copyright 2024 | All Rights Reserved | <a href="#" class="text-decoration-none text-color-white hover-yellow">The Church Online, LLC</a></p>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-12 text-center copyright-text footer-mobile">
+                    <p class="text-color-white roboto-regular mb-0 pt-3 pb-2">© Copyright 2024 | All Rights Reserved <a href="#" class="text-decoration-none text-color-white hover-yellow"></br>The Church Online, LLC</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+ 
+ 
+
+  <!--   <div id="bottom-bar" class="bg-orange py-2"></div>-->
+
+
+</main>
+<!-- Bootstrap 5 Javascript -->
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+<!-- Custom Javascript -->
+<!-- build:js -->
+<script src="assets/js/app.js"></script>
+<script src="/assets/js/calendar.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" id="moment-js-js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js" id="fullcalendar-js-js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.9/index.global.min.js" id="fullcalendargcal-js-js"></script>
+<!-- endbuild -->
+</body>
+</html>
+
+

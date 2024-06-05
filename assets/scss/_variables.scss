@@ -1,0 +1,216 @@
+// Variables
+
+$white: #FFFFFF;
+$black: #000000;
+$lightblue: #B9EAFF;
+$orange: #ff9c00;
+$darkgrey: #363535;
+$magenta: #ea344e;
+$blue: #10469C;
+$bluedark: #042558;
+$yellow: #FFB800;
+
+
+.bg-yellow {
+    background-color: $yellow;
+}
+.bg-lightblue {
+    background-color: $lightblue;
+}
+.bg-blue {
+    background-color: $blue;
+}
+.bg-bluedark {
+    background-color: $bluedark;
+}
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-darkgrey {
+    background-color: $darkgrey;
+}
+
+.bg-magenta {
+    background-color: $magenta;
+}
+
+.text-color-yellow,
+.hover-yellow:hover {
+    color: $yellow;
+}
+
+.text-color-bluedark,
+.hover-bluedark:hover {
+    color: $bluedark;
+}
+
+.text-color-white,
+.hover-white:hover {
+    color: $white;
+}
+
+.text-color-black,
+.hover-black:hover {
+    color: $black;
+}
+
+.text-color-lightblue,
+.hover-lightblue:hover {
+    color: $lightblue;
+}
+
+.text-color-orange,
+.hover-orange:hover {
+    color: $orange;
+}
+
+.text-color-darkgrey,
+.hover-darkgrey:hover {
+    color: $darkgrey;
+}
+
+.text-color-magenta,
+.hover-magenta:hover {
+    color: $magenta;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.mt-n1 {
+  margin-top: -1rem !important;
+}
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+
+.roboto-thin {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.roboto-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+h1{
+    font-size: 3rem;
+
+    @media (max-width: 767px){
+        font-size: 2rem;
+    }
+  
+}
+
+@media (max-width: 767px){
+    .bg-transparent-mobile{
+        background-color: transparent !important;
+    }
+}
+
+@media (max-width: 767px){
+  div#content-area {
+    top: -0.5rem !important;
+  
+}
+
+}
+
+
+@media (max-width: 767px){
+  div#content-area 
+header.pt-0.pb-2.pb-lg-0.position-relative.z-3.bg-blue {
+    padding-bottom: 0rem !important;
+}
+}
+
+
+@media (max-width: 767px) {
+    body header .navbar.navbar-expand-md ul.navbar-nav li a {
+        color: #FFFFFF;
+        background: #10469C !important;
+        /* margin-top: 0px; */
+        top: -16px !important;
+        position: relative !important;
+    }
+}
+
+
+
+.top-35 {
+  top: 35% !important;
+}
+
+div#content-area {
+    position: relative !important;
+    top: -3rem;
+    z-index: 99 !important;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: white;
+}
