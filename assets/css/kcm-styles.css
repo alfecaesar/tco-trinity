@@ -1,4 +1,17 @@
+.lh-sm {
+  line-height: 1.5 !important;
+}
+
 footer .container-xxl .row:first-of-type img {
   max-width: 300px;
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  body header .navbar.navbar-expand-md ul.navbar-nav li:hover, body header .navbar.navbar-expand-md ul.navbar-nav li.selected {
+    background-color: transparent;
+  }
+  body header .navbar.navbar-expand-md ul.navbar-nav li:hover a, body header .navbar.navbar-expand-md ul.navbar-nav li.selected a {
+    color: #000000 !important;
+  }
 }

@@ -212,7 +212,7 @@ body {
 
         &.selected {
           a {
-            color: $yellow;
+            color: $orange;
           }
         }
 
@@ -390,11 +390,6 @@ body header .navbar.navbar-expand-md ul.navbar-nav a {
     font-size: 1rem;
   }
 
-  body header .navbar.navbar-expand-md ul.navbar-nav li:hover,
-  body header .navbar.navbar-expand-md ul.navbar-nav li.selected {
-    background-color: #042558;
-  }
-
   body header .navbar.navbar-expand-md ul.navbar-nav li a {
     color: #FFFFFF;
   }
@@ -426,6 +421,7 @@ body header .navbar.navbar-expand-md ul.navbar-nav a {
 
   li.col-lg-2.col-6.roboto-medium {
     padding-top: 9px !important;
+    width: 100% !important;
   }
 }
 
@@ -787,18 +783,13 @@ body header .navbar.navbar-expand-md ul.navbar-nav a {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #042558;
+    background-color: $yellow;
 
   }
 
   body header .navbar.navbar-expand-md ul.navbar-nav li {
     font-weight: 700;
     font-size: 1rem;
-  }
-
-  body header .navbar.navbar-expand-md ul.navbar-nav li:hover,
-  body header .navbar.navbar-expand-md ul.navbar-nav li.selected {
-    background-color: #042558;
   }
 
   body header .navbar.navbar-expand-md ul.navbar-nav li a {
@@ -838,7 +829,7 @@ body header .navbar.navbar-expand-md ul.navbar-nav a {
   }
 
   body header .navbar.navbar-expand-md ul.navbar-nav li.selected a {
-    color: $yellow;
+    color: $orange;
     font-weight: 700;
   }
 
@@ -955,7 +946,7 @@ body .cta-card .card .card-body .h5 {
 
   body header .navbar.navbar-expand-md ul.navbar-nav li a {
     color: #FFFFFF;
-    background: #10469C !important;
+    background: $yellow !important;
     /* margin-top: 0px; */
     top: -4px !important;
     position: relative !important;
@@ -1155,11 +1146,12 @@ h2.banner.roboto-bold {
 
   li.col-lg-2.col-6.roboto-bold.selected {
     margin-top: 8px !important;
+    width: 100% !important;
   }
 
 
   li.nav-item.active.roboto-regular.selected.about a {
-    color: #FFB800 !important;
+    color: $black !important;
   }
 }
 
@@ -1240,7 +1232,7 @@ h2.banner.roboto-bold {
 
 
   li.nav-item.active.roboto-regular.selected.ministries a {
-    color: #FFB800 !important;
+    color: $black !important;
   }
 
   .wrap-banner-ministries {
@@ -1317,7 +1309,7 @@ h2.banner.roboto-bold {
 
 
   li.nav-item.active.roboto-regular.selected.calendar a {
-    color: #FFB800 !important;
+    color: $black !important;
   }
 
   .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
@@ -1449,7 +1441,7 @@ h2.banner.roboto-bold {
   }
 
   li.nav-item.active.roboto-regular.selected.contact.no-border a {
-    color: #FFB800 !important;
+    color: $black !important;
   }
 
   .container.body-content-contact {
