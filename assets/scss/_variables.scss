@@ -36,9 +36,18 @@ $yellow: #DAA520;
     background-color: $black;
 }
 
+.bg-hover-orange:hover {
+    background-color: $orange;
+}
+
 .text-color-yellow,
-.hover-orange:hover {
+.hover-yellow:hover {
     color: $yellow;
+}
+
+.text-color-orange,
+.hover-orange:hover {
+    color: $orange;
 }
 
 .text-color-bluedark,

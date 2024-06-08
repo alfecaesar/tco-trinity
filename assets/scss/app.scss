@@ -706,7 +706,7 @@ body .custom-maxwidth-lg {
     justify-content: center;
   }
 
-  a.watchlive.text-color-bluedark.text-decoration-none.hover-white.bg-yellow.py-1.px-sm-2.roboto-bold.text-uppercase {
+  a.watchlive {
     margin-left: -20px;
   }
 }
@@ -957,7 +957,7 @@ body .cta-card .card .card-body .h5 {
 
 @media (max-width: 767px) {
 
-  a.watchlive.text-color-bluedark.text-decoration-none.hover-white.bg-yellow.py-1.px-sm-2.roboto-bold.text-uppercase {
+  a.watchlive {
     /* background: none !important; */
     padding-left: 10px;
     padding-right: 10px;
@@ -1452,6 +1452,12 @@ h2.banner.roboto-bold {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 
+  }
+  .container.body-content.about{
+    margin-top: 0px !important;
+  }
+  .container.about-img{
+    max-width: 370px !important;
   }
 
   .mt-n1 {
