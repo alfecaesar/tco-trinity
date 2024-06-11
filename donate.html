@@ -1,54 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js'></script>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var calendarEl = document.getElementById('calendar');
-
- var calendar = new FullCalendar.Calendar(calendarEl, {
-            timeZone: '############',
-            googleCalendarApiKey: 'AIzaSyDTK6c94YQd5989fduUeA91U4CRi27wrGk', // googleCalendarApiKey
-            headerToolbar: {
-                start: 'prev,next today',
-                center: 'title',
-                end: 'dayGridMonth,timeGridWeek,timeGridDay,listYear'
-            },
-           
-        
-         displayEventTime: false, // don't show the time column in list view
-
-    // THIS KEY WON'T WORK IN PRODUCTION!!!
-    // To make your own Google API key, follow the directions here:
-    // http://fullcalendar.io/docs/google_calendar/
-    googleCalendarApiKey: 'AIzaSyDTK6c94YQd5989fduUeA91U4CRi27wrGk',
-
-    // US Holidays
-    events: '',
-
-    eventClick: function(arg) {
-
-      // opens events in a popup window
-      window.open(arg.event.url, '_blank', 'width=700,height=600');
-
-      // prevents current tab from navigating
-      arg.jsEvent.preventDefault();
-    }
-
-  });
-
-  calendar.render();
-});
-
-
-
-    </script>
-<link rel='stylesheet' id='fullcalendar-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' type='text/css' media='all' />
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Kevin Cooper Ministry - Calendar</title>
+    <title>Kevin Cooper Ministry - Donate</title>
 
     <!-- Favicons -->
     <link rel="icon" href="assets/img/favicons/favicon.ico">
@@ -89,13 +45,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li class="nav-item roboto-regular ">
                         <a class="nav-link text-color-white hover-orange" href="ministries.html">Ministries</a>
                     </li>
-                    <li class="nav-item active roboto-regular selected calendar">
+                    <li class="nav-item roboto-regular">
                         <a class="nav-link text-color-white hover-orange" href="calendar.html">Calendar</a>
                     </li>
-                    <li class="nav-item roboto-regular no-border">
+                    <li class="nav-item active roboto-regular contact no-border">
                         <a class="nav-link text-color-white hover-orange" href="contact.html">Contact Us</a>
                     </li>
-                    <li class="nav-item roboto-regular">
+                    <li class="nav-item roboto-regular selected">
                         <a class="nav-link text-color-white hover-white bg-yellow bg-hover-orange py-1 px-sm-2 roboto-bold text-uppercase" href="donate.html">Donate</a>
                     </li>
                 </ul>
@@ -108,22 +64,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <!-- Banner -->
-<section class="wrap-banner-calendar">
+<section class="wrap-banner-contact">
  <div> 
-  <h2 class="banner roboto-bold">CALENDAR</h2>
+  <h2 class="banner roboto-bold">Donate</h2>
   </div>
 </section>
 
 <!-- End -->
 
     <!-- Body Content -->
-  <div class="container body-content-calendar py-3 py-md-5">
+  <div class="container body-content-ministries pb-4">
+    <p class="lh-sm text-center mb-3">Make an online donation today.</p>
+
+    <div class="row d-flex justify-content-center gap-3 flex-column flex-md-row donation-list">
+        <div class="col-12 col-md-3 shadow-lg rounded-3 d-flex justify-content-center align-items-center bg-white donation-item">
+            <a href="#" target="_blank" class="py-4 text-color-black text-decoration-none d-block text-center roboto-medium">
+                <img class="img-fluid" src="assets/img/PayPal.png" alt="Paypal">
+                <span class="d-block mt-2 roboto-bold">Paypal</span>
+            </a>
+        </div>
+        <div class="col-12 col-md-3 shadow-lg rounded-3 d-flex justify-content-center align-items-center bg-white donation-item">
+            <a href="assets/img/IMG-0101.PNG" target="_blank" class="py-5 py-md-4 text-color-black text-decoration-none d-block text-center roboto-medium">
+                Zelle®
+            </a>
+        </div>
+    </div>
  
-
-<div id='calendar'>
-
-</div>
-
 </div>
 
 <!-- End -->
@@ -139,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
 
 
+
                 <div class="col-12 text-center mb-3 company-address">
                     <p class="text-color-white roboto-medium mb-0"><a target="_blank" href="https://www.google.com/maps/place/7163+Tilden+St,+Pittsburgh,+PA+15206,+USA/@40.4640535,-79.8960066,17z/data=!3m1!4b1!4m6!3m5!1s0x8834edbcdd43aa09:0x32bca1f5d2ca1882!8m2!3d40.4640535!4d-79.8934317!16s%2Fg%2F11cs968ng9?entry=tts&g_ep=EgoyMDI0MDYwMi4wKgBIAVAD" class="text-decoration-none text-color-white hover-orange">7163 Tilden Pittsburgh, PA 15206</a></p>
 
@@ -150,9 +117,9 @@ document.addEventListener('DOMContentLoaded', function() {
                             <li class="col-lg-2 col-6 roboto-medium  "><a class="text-color-white text-decoration-none hover-orange" href="/">Home</a></li>
                             <li class="col-lg-2 col-6 roboto-medium "><a class="text-color-white text-decoration-none hover-orange" href="about.html">About</a></li>
                             <li class="col-lg-2 col-6 roboto-medium "><a class="text-color-white text-decoration-none hover-orange" href="ministries.html">Ministries</a></li>
-                            <li class="col-lg-2 col-6 roboto-bold selected"><a class="text-color-white text-decoration-none hover-orange" href="calendar.html">Calendar</a></li>
+                            <li class="col-lg-2 col-6 roboto-medium "><a class="text-color-white text-decoration-none hover-orange" href="calendar.html">Calendar</a></li>
                             <li class="col-lg-2 col-6 roboto-medium no-border"><a class="text-color-white text-decoration-none hover-orange" href="contact.html">Contact Us</a></li>
-                            <li class="col-lg-2 col-6 roboto-medium "><a class="watchlive text-color-white text-decoration-none bg-hover-orange bg-yellow py-1 px-sm-2 roboto-bold text-uppercase" href="donate.html">Donate</a></li>
+                            <li class="col-lg-2 col-6 roboto-bold selected"><a class="watchlive text-color-white text-decoration-none bg-hover-orange bg-yellow py-1 px-sm-2 roboto-bold text-uppercase" href="donate.html">Donate</a></li>
                         </ul>  
                     </nav>  
                 </div>
@@ -182,12 +149,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Custom Javascript -->
 <!-- build:js -->
 <script src="assets/js/app.js"></script>
-<script src="/assets/js/calendar.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" id="moment-js-js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js" id="fullcalendar-js-js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.9/index.global.min.js" id="fullcalendargcal-js-js"></script>
 <!-- endbuild -->
 </body>
 </html>
-
-

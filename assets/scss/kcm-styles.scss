@@ -15,6 +15,29 @@ footer{
     }
 }
 
+.card{
+    img{
+        max-width: 124px;
+    }
+}
+
+body header .navbar.navbar-expand-md ul.navbar-nav li.selected a.bg-yellow,
+body .footer-nav ul li.selected a.watchlive{
+    background-color: $orange;
+    color: $white;
+}
+
+.donation-list{
+    .donation-item{
+        span{
+            font-size: 16px;
+        }
+        img{
+            max-width: 80px;
+        }
+    }
+}
+
 @media (max-width: 767px) {
     body header .navbar.navbar-expand-md ul.navbar-nav li:hover, body header .navbar.navbar-expand-md ul.navbar-nav li.selected {
         background-color: transparent;

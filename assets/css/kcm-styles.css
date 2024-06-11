@@ -7,6 +7,10 @@ footer .container-xxl .row:first-of-type img {
   width: 100%;
 }
 
+.card img {
+  max-width: 124px;
+}
+
 @media (max-width: 767px) {
   body header .navbar.navbar-expand-md ul.navbar-nav li:hover, body header .navbar.navbar-expand-md ul.navbar-nav li.selected {
     background-color: transparent;
