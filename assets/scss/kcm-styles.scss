@@ -23,8 +23,8 @@ footer{
 
 body header .navbar.navbar-expand-md ul.navbar-nav li.selected a.bg-yellow,
 body .footer-nav ul li.selected a.watchlive{
-    background-color: $orange;
-    color: $white;
+    background-color: #da5020; 
+    color: #FFFFFF;
 }
 
 .donation-list{
@@ -35,6 +35,12 @@ body .footer-nav ul li.selected a.watchlive{
         img{
             max-width: 80px;
         }
+    }
+}
+
+.badge{
+    a{
+        color: #000000 !important;
     }
 }
 

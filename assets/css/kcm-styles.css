@@ -11,6 +11,23 @@ footer .container-xxl .row:first-of-type img {
   max-width: 124px;
 }
 
+body header .navbar.navbar-expand-md ul.navbar-nav li.selected a.bg-yellow,
+body .footer-nav ul li.selected a.watchlive {
+  background-color: #da5020;
+  color: #FFFFFF;
+}
+
+.donation-list .donation-item span {
+  font-size: 16px;
+}
+.donation-list .donation-item img {
+  max-width: 80px;
+}
+
+.badge a {
+  color: #000000 !important;
+}
+
 @media (max-width: 767px) {
   body header .navbar.navbar-expand-md ul.navbar-nav li:hover, body header .navbar.navbar-expand-md ul.navbar-nav li.selected {
     background-color: transparent;

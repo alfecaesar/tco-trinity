@@ -11,7 +11,8 @@ $bluedark: #042558;
 $yellow: #DAA520;
 
 
-.bg-yellow {
+.bg-yellow,
+.bg-hover-yellow:hover {
     background-color: $yellow;
 }
 .bg-lightblue {
