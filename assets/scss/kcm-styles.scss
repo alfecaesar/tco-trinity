@@ -41,6 +41,38 @@ body .footer-nav ul li.selected a.watchlive{
 .badge{
     a{
         color: #000000 !important;
+        text-decoration: none !important;
+    }
+}
+
+.company-address{
+    display: flex;
+    flex-direction: column;
+
+    p{
+        &:last-of-type{
+            order: 1;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            
+            @media (max-width: 767px){
+                font-size: 1rem;
+            }
+        }
+    }
+    p{
+        &:first-of-type{
+            order: 2;
+        }
+    }
+}
+
+body header .navbar.navbar-expand-md ul.navbar-nav li:last-of-type{
+    background-color: #da5020 !important;
+
+    a{
+        background-color: transparent !important;
+        top: 0px !important;
     }
 }
 
