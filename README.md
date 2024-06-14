@@ -24,9 +24,15 @@ You can override bootstrap sass variables by placing those variables in `assets/
   - `gulp dev`  - Starts a local server with browserSync and hot reloading on changes to files (HTML, SCSS, JS).
    
 
-## Notes
+## IMPORTANT NOTES
+
+   - Do not edit `dist` folder or any files belong to the same folder
+   - After running `gulp`, compress the files inside `dist` folder and upload it to cpanel root
+   - Do not edit cpanel files, use this branch to edit and compile your changes to upload it to cpanel. This will serve as your dev environment that run in your local machine
+
+## Package Notes
 
    - Custom App Style : assets/scss/app.scss
    - Overriding Bootstrap variable: assets/scss/_bootstrap_variable_overrides.scss
    - Custom SCSS: assets/scss/_general.scss, assets/scss/_layout.scss, assets/scss/_mixins.scss, assets/scss/_module.scss, _variables.scss
-   - Custom App Javascript: assets/js/app.js
+   - Custom App Javascript: assets/js/app.js   
